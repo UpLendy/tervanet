@@ -191,6 +191,8 @@ td.col-us { background:rgba(0,194,255,.04); font-weight:500; color:var(--white);
 
 @media(max-width:767px) {
   .wa-float { bottom: 110px; margin-bottom: env(safe-area-inset-bottom); }
+  nav { justify-content: center; }
+  .nav-cta { display: none !important; }
 }
 
 @media(max-width:600px) {

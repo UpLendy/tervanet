@@ -125,7 +125,7 @@ export default function Home() {
           <img src="/canva.png" alt="Canva Logo" style={{ height: "30px", width: "auto", objectFit: "contain" }} />
           <span className="nav-logo-text">Canva<span>PRO</span></span>
         </div>
-        <a href="https://checkout.bold.co/payment/LNK_CA38MMMYKT" target="_blank" rel="noopener noreferrer" onClick={handlePaymentClick} className="btn-primary" style={{ fontSize: "14px", padding: "12px 24px", maxWidth: "none", width: "auto" }}>💳 Pagar ahora</a>
+        <a href="https://checkout.bold.co/payment/LNK_CA38MMMYKT" target="_blank" rel="noopener noreferrer" onClick={handlePaymentClick} className="btn-primary nav-cta" style={{ fontSize: "14px", padding: "12px 24px", maxWidth: "none", width: "auto" }}>💳 Pagar ahora</a>
       </nav>
 
       {/* HERO */}
