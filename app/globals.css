@@ -189,6 +189,10 @@ td.col-us { background:rgba(0,194,255,.04); font-weight:500; color:var(--white);
 .sticky-price strong { font-family:var(--font-syne), sans-serif; font-size:18px; font-weight:800; color:var(--cyan); }
 .sticky-btn { background:var(--cyan); color:var(--navy); font-family:var(--font-syne), sans-serif; font-weight:700; font-size:14px; padding:12px 22px; border-radius:100px; white-space:nowrap; box-shadow:0 0 20px rgba(0,194,255,.3); }
 
+@media(max-width:767px) {
+  .wa-float { bottom: 110px; margin-bottom: env(safe-area-inset-bottom); }
+}
+
 @media(max-width:600px) {
   .apk-grid { grid-template-columns:1fr; }
   .resources-grid { grid-template-columns:1fr; }

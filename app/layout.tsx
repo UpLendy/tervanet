@@ -15,7 +15,7 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Canva Pro Original — $18.890/mes · Colombia",
+  title: "Canva Pro Original — $18.900/mes · Colombia",
   description: "Canva Pro Original a una fracción del precio. Edita y diseña como un profesional con acceso a todas las herramientas premium.",
 };
 

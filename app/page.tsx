@@ -115,7 +115,7 @@ export default function Home() {
     <>
       {/* URGENCY STRIP */}
       <div className="urgency-strip">
-        ⚠️ <b>Precio sube la próxima semana.</b> Activa tu acceso PRO hoy por solo <span>$18.890/mes</span> — garantizado.
+        ⚠️ <b>Precio sube la próxima semana.</b> Activa tu acceso PRO hoy por solo <span>$18.900/mes</span> — garantizado.
       </div>
 
       {/* NAV */}
@@ -141,7 +141,7 @@ export default function Home() {
             <div className="price-compare">
               <div className="price-old">Tienda oficial: <span>$50.000+/mes</span></div>
               <div style={{ width: "1px", height: "32px", background: "rgba(255,255,255,.1)" }}></div>
-              <div className="price-new">$18.890 <small>COP/mes</small></div>
+              <div className="price-new">$18.900 <small>COP/mes</small></div>
             </div>
           </div>
 
@@ -160,9 +160,9 @@ export default function Home() {
           </div>
 
           <div className="reveal" style={{ textAlign: "center" }}>
-            <div className="price-warning">⚠️ El precio sube a $29.900 la próxima semana. Activa hoy y congelas $18.890.</div>
+            <div className="price-warning">⚠️ El precio sube a $29.900 la próxima semana. Activa hoy y congelas $18.900.</div>
             <p style={{ fontSize: "13px", color: "var(--green)", fontWeight: 600, marginBottom: "12px" }}>⚡ <span className="live-num">{liveUsers.toLocaleString('es-CO')}</span> creadores ya lo activaron — activa el tuyo antes de que se agoten los cupos</p>
-            <a href="https://checkout.bold.co/payment/LNK_CA38MMMYKT" target="_blank" rel="noopener noreferrer" onClick={handlePaymentClick} className="btn-primary">💳 Pagar ahora — $18.890/mes</a>
+            <a href="https://checkout.bold.co/payment/LNK_CA38MMMYKT" target="_blank" rel="noopener noreferrer" onClick={handlePaymentClick} className="btn-primary">💳 Pagar ahora — $18.900/mes</a>
             <div style={{ marginTop: "10px" }}>
               <div style={{ fontSize: "12px", color: "var(--gray)", marginBottom: "6px" }}>🔒 Pago seguro · Entrega inmediata · Garantía real</div>
               <a href="https://wa.me/message/TEIMDMVA6SBTC1" style={{ fontSize: "12px", color: "var(--gray)", textDecoration: "underline" }}>¿Tienes dudas? Escríbenos por WhatsApp</a>
@@ -216,13 +216,13 @@ export default function Home() {
                 <div className="apk-item"><span className="icon-good">✓</span>Acceso estable, oficial y en la nube</div>
                 <div className="apk-item"><span className="icon-good">✓</span>Garantía real de devolución</div>
                 <div className="apk-item"><span className="icon-good">✓</span>Seguro — es una invitación a equipo premium</div>
-                <div className="apk-item"><span className="icon-good">✓</span>Precio fijo: $18.890/mes</div>
+                <div className="apk-item"><span className="icon-good">✓</span>Precio fijo: $18.900/mes</div>
               </div>
             </div>
           </div>
           <div className="reveal" style={{ marginTop: "36px" }}>
             <p style={{ fontSize: "14px", color: "var(--green)", fontWeight: 600, marginBottom: "14px" }}>🔐 Es el mismo acceso premium que obtienes en la tienda oficial. La diferencia es el precio al pertenecer a nuestro equipo exclusivo.</p>
-            <a href="https://checkout.bold.co/payment/LNK_CA38MMMYKT" target="_blank" rel="noopener noreferrer" onClick={handlePaymentClick} className="btn-primary">💳 Quiero el acceso original — $18.890</a>
+            <a href="https://checkout.bold.co/payment/LNK_CA38MMMYKT" target="_blank" rel="noopener noreferrer" onClick={handlePaymentClick} className="btn-primary">💳 Quiero el acceso original — $18.900</a>
           </div>
         </div>
       </section>
@@ -259,7 +259,7 @@ export default function Home() {
             <div className="course-value">Valor real de recursos y curso: <b>$50.000</b> — incluido <b style={{ color: "var(--green)" }}>completamente gratis</b> con tu acceso PRO</div>
           </div>
           <div className="reveal" style={{ marginTop: "28px" }}>
-            <a href="https://checkout.bold.co/payment/LNK_CA38MMMYKT" target="_blank" rel="noopener noreferrer" onClick={handlePaymentClick} className="btn-primary">💳 Quiero el PRO + recursos — $18.890</a>
+            <a href="https://checkout.bold.co/payment/LNK_CA38MMMYKT" target="_blank" rel="noopener noreferrer" onClick={handlePaymentClick} className="btn-primary">💳 Quiero el PRO + recursos — $18.900</a>
           </div>
         </div>
       </section>
@@ -349,7 +349,7 @@ export default function Home() {
             <span style={{ fontFamily: "var(--font-syne), sans-serif", fontWeight: 800, fontSize: "16px", color: "#FF6B6B" }}><span className="th">{timeLeft.h}</span>:<span className="tm">{timeLeft.m}</span>:<span className="ts">{timeLeft.s}</span></span>
           </div>
           <br />
-          <a href="https://checkout.bold.co/payment/LNK_CA38MMMYKT" target="_blank" rel="noopener noreferrer" onClick={handlePaymentClick} className="btn-primary">💳 Activar mi Canva Pro ahora — $18.890</a>
+          <a href="https://checkout.bold.co/payment/LNK_CA38MMMYKT" target="_blank" rel="noopener noreferrer" onClick={handlePaymentClick} className="btn-primary">💳 Activar mi Canva Pro ahora — $18.900</a>
           <p style={{ fontSize: "12px", color: "var(--gray)", marginTop: "10px" }}>🔒 Nequi · Daviplata · Transferencia · Tarjeta · Entrega al instante</p>
         </div>
       </section>
@@ -378,7 +378,7 @@ export default function Home() {
                 <tr><td style={{ textAlign: "left" }}>Redimensión Mágica e IA</td><td className="check-no">✗</td><td className="check-yes">✓</td><td className="col-us check-yes">✓</td></tr>
                 <tr><td style={{ textAlign: "left" }}>Soporte real WhatsApp</td><td className="check-no">✗</td><td className="check-no">✗</td><td className="col-us check-yes">✓</td></tr>
                 <tr><td style={{ textAlign: "left" }}>Plantillas de agencia (Gratis)</td><td className="check-no">✗</td><td className="check-no">✗</td><td className="col-us check-yes">✓</td></tr>
-                <tr><td style={{ textAlign: "left" }}>Precio mensual</td><td style={{ color: "#FF6B6B" }}>Con marca / Virus</td><td style={{ color: "#FF6B6B" }}>$50.000+</td><td className="col-us" style={{ color: "var(--cyan)", fontWeight: 700 }}>$18.890</td></tr>
+                <tr><td style={{ textAlign: "left" }}>Precio mensual</td><td style={{ color: "#FF6B6B" }}>Con marca / Virus</td><td style={{ color: "#FF6B6B" }}>$50.000+</td><td className="col-us" style={{ color: "var(--cyan)", fontWeight: 700 }}>$18.900</td></tr>
               </tbody>
             </table>
           </div>
@@ -456,7 +456,7 @@ export default function Home() {
             </div>
           </div>
           <div className="reveal" style={{ marginTop: "32px" }}>
-            <a href="https://checkout.bold.co/payment/LNK_CA38MMMYKT" target="_blank" rel="noopener noreferrer" onClick={handlePaymentClick} className="btn-primary">💳 Unirme a la familia Pro — $18.890</a>
+            <a href="https://checkout.bold.co/payment/LNK_CA38MMMYKT" target="_blank" rel="noopener noreferrer" onClick={handlePaymentClick} className="btn-primary">💳 Unirme a la familia Pro — $18.900</a>
           </div>
         </div>
       </section>
@@ -472,7 +472,7 @@ export default function Home() {
             <div className="guarantee-icon">🛡</div>
             <div className="guarantee-title">Si no funciona, te devolvemos el 100%</div>
             <div className="guarantee-text">Sin preguntas. Sin procesos complicados. Sin letra pequeña. Llevamos +15.000 clientes activos con esta garantía — y la hemos honrado siempre. Si el acceso falla y no podemos solucionarlo, tu dinero vuelve completo.</div>
-            <a href="https://checkout.bold.co/payment/LNK_CA38MMMYKT" target="_blank" rel="noopener noreferrer" onClick={handlePaymentClick} className="btn-primary" style={{ marginTop: "8px" }}>💳 Con esta garantía el riesgo es cero → Pagar $18.890</a>
+            <a href="https://checkout.bold.co/payment/LNK_CA38MMMYKT" target="_blank" rel="noopener noreferrer" onClick={handlePaymentClick} className="btn-primary" style={{ marginTop: "8px" }}>💳 Con esta garantía el riesgo es cero → Pagar $18.900</a>
           </div>
         </div>
       </section>
@@ -534,7 +534,7 @@ export default function Home() {
             </div>
           </div>
 
-          <a href="https://checkout.bold.co/payment/LNK_CA38MMMYKT" target="_blank" rel="noopener noreferrer" onClick={handlePaymentClick} className="btn-primary">💳 Activar mi Canva Pro ahora — $18.890</a>
+          <a href="https://checkout.bold.co/payment/LNK_CA38MMMYKT" target="_blank" rel="noopener noreferrer" onClick={handlePaymentClick} className="btn-primary">💳 Activar mi Canva Pro ahora — $18.900</a>
           <div style={{ marginTop: "12px" }}>
             <a href="https://wa.me/message/TEIMDMVA6SBTC1" style={{ fontSize: "12px", color: "var(--gray)", textDecoration: "underline" }}>¿Tienes dudas? Escríbenos por WhatsApp</a>
           </div>
@@ -555,7 +555,7 @@ export default function Home() {
       <div className="sticky-bar">
         <div className="sticky-price">
           <small>Canva Pro original</small>
-          <strong>$18.890/mes</strong>
+          <strong>$18.900/mes</strong>
         </div>
         <a href="https://checkout.bold.co/payment/LNK_CA38MMMYKT" target="_blank" rel="noopener noreferrer" onClick={handlePaymentClick} className="sticky-btn">💳 Pagar ahora</a>
       </div>
