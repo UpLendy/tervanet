@@ -8,17 +8,15 @@ export default function Home() {
   const [liveUsers, setLiveUsers] = useState(15421);
   const [stock, setStock] = useState(17);
   const [activeFaq, setActiveFaq] = useState<number | null>(0);
+  const [pendingPaymentUrl, setPendingPaymentUrl] = useState<string | null>(null);
 
   const toggleFaq = (index: number) => {
     setActiveFaq(activeFaq === index ? null : index);
   };
 
   const handlePaymentClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    // Cuando hacen clic, el enlace se abre en una pestaña nueva (por el target="_blank"),
-    // y redirigimos la pestaña actual mágicamente a la página de gracias de fondo.
-    setTimeout(() => {
-      window.location.href = "/gracias";
-    }, 500);
+    e.preventDefault();
+    setPendingPaymentUrl(e.currentTarget.href);
   };
 
   useEffect(() => {
@@ -559,6 +557,65 @@ export default function Home() {
         </div>
         <a href="https://checkout.bold.co/payment/LNK_CA38MMMYKT" target="_blank" rel="noopener noreferrer" onClick={handlePaymentClick} className="sticky-btn">💳 Pagar ahora</a>
       </div>
+
+      {/* PENDING PAYMENT MODAL */}
+      {pendingPaymentUrl && (
+        <div style={{
+          position: "fixed",
+          top: 0, left: 0, right: 0, bottom: 0,
+          backgroundColor: "rgba(0,0,0,0.8)",
+          zIndex: 99999,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "20px"
+        }}>
+          <div style={{
+            background: "var(--navy)",
+            border: "1px solid rgba(255,255,255,0.1)",
+            borderRadius: "20px",
+            padding: "32px",
+            maxWidth: "400px",
+            textAlign: "center",
+            boxShadow: "0 20px 40px rgba(0,0,0,0.5)"
+          }}>
+            <div style={{ fontSize: "48px", marginBottom: "16px" }}>⚠️</div>
+            <h3 style={{ fontSize: "22px", fontWeight: "bold", color: "#fff", marginBottom: "16px" }}>Atención IMPORTANTE</h3>
+            <p style={{ fontSize: "15px", color: "var(--gray)", lineHeight: "1.6", marginBottom: "32px" }}>
+              Para garantizar tu activación inmediata, al finalizar tu pago <b style={{ color: "#fff" }}>DEBES</b> regresar a esta página para enviarnos el comprobante.
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+              <button 
+                className="btn-primary"
+                onClick={() => {
+                  window.open(pendingPaymentUrl, "_blank");
+                  setTimeout(() => {
+                    window.location.href = "/gracias";
+                  }, 500);
+                  setPendingPaymentUrl(null);
+                }}
+                style={{ cursor: "pointer", border: "none" }}
+              >
+                Entendido, ir a pagar
+              </button>
+              <button 
+                style={{
+                  background: "transparent",
+                  border: "none",
+                  color: "var(--gray)",
+                  fontSize: "14px",
+                  cursor: "pointer",
+                  textDecoration: "underline",
+                  padding: "8px"
+                }}
+                onClick={() => setPendingPaymentUrl(null)}
+              >
+                Cancelar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
